@@ -13,7 +13,7 @@ RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get -y install \
     texlive \
     latexmk \
-    texlive-recommended \
+    texlive-latex-recommended \
     texlive-lang-german \
     texlive-latex-extra \
     texlive-science \
