@@ -3,7 +3,7 @@ Dockerfile for local and CI/CD texlive container.
 
 # How to build
 
-TODO
+docker build -t texlive-lw:latest -f Dockerfile .
 
 # Examples
 
