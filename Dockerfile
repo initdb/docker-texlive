@@ -21,7 +21,8 @@ RUN apt-get -y install \
     texlive-pictures \
     python3 \
     python3-pygments \
-    graphviz
+    graphviz \
+    make
 RUN apt-get clean
 
 
