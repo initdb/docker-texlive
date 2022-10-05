@@ -1,4 +1,4 @@
-FROM ubuntu:20.10
+FROM ubuntu:20.04
 LABEL maintainer="Benedict Schwind <benedict.schwind@stud.th-rosenheim.de>"
 LABEL Description="Image for building tex documents"
 
