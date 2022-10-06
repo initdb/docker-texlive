@@ -19,7 +19,7 @@ RUN apt-get -y install \
     texlive-science \
     texlive-font-utils \
     texlive-pictures \
-    texlive-bibtexextra \
+    texlive-bibtex-extra \
     python3 \
     python3-pygments \
     graphviz \
