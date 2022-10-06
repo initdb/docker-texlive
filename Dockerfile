@@ -20,6 +20,7 @@ RUN apt-get -y update && \
     texlive-font-utils \
     texlive-pictures \
     texlive-bibtex-extra \
+    biber \
     python3 \
     python3-pygments \
     graphviz \
