@@ -8,9 +8,9 @@ ADD . /toolchain/texlive
 ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt-get -y update
-RUN apt-get install -y --no-install-recommends apt-utils
-RUN apt-get -y install \
+RUN apt-get -y update && \
+    apt-get install -y --no-install-recommends apt-utils \
+    apt-get -y install \
     texlive \
     latexmk \
     texlive-latex-recommended \
@@ -23,7 +23,8 @@ RUN apt-get -y install \
     python3 \
     python3-pygments \
     graphviz \
-    make
-RUN apt-get clean
+    make \
+    && \
+    apt-get clean
 
 
