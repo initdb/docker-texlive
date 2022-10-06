@@ -9,7 +9,7 @@ ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get -y update && \
-    apt-get install -y --no-install-recommends apt-utils \
+    apt-get install -y --no-install-recommends apt-utils && \
     apt-get -y install \
     texlive \
     latexmk \
@@ -23,8 +23,7 @@ RUN apt-get -y update && \
     python3 \
     python3-pygments \
     graphviz \
-    make \
-    && \
+    make && \
     apt-get clean
 
 
