@@ -28,6 +28,7 @@ I personally use vscode as my tex editor. See below for a list of recommended pl
 enable it. 
 ```json
 "latex-workshop.docker.enabled": true
+"latex-utilities.countWord.docker.enabled": true
 ```
 3. now add the container name. it can be either your local or the image from the GitHub package registry
 ```json
