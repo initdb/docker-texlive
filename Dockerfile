@@ -24,6 +24,7 @@ RUN apt-get -y update && \
     biber \
     python3 \
     python3-pygments \
+    python-is-python3 \
     graphviz \
     make && \
     apt-get clean
