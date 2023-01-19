@@ -36,7 +36,7 @@ class CustomStyle(Style):
           Name.Tag:                  "bold #00809f",
           Name.Decorator:            "#AA22FF",
 
-          String:                    "#007771",
+          String:                    "#005551",
           String.Doc:                "italic",
           String.Interpol:           "bold #A45A77",
           String.Escape:             "bold #AA5D1F",
@@ -46,7 +46,7 @@ class CustomStyle(Style):
           Number:                    "#666666",
 
           Generic.Heading:           "bold #000080",
-          Generic.Subheading:        "bold #003e76",
+          Generic.Subheading:        "bold #ff9933",
           Generic.Deleted:           "#A00000",
           Generic.Inserted:          "#008400",
           Generic.Error:             "#E40000",
