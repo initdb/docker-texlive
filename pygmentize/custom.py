@@ -13,8 +13,8 @@ class CustomStyle(Style):
 
      styles = {
           Whitespace:                "#bbbbbb",
-          Comment:                   "italic #3D7B7B",
-          Comment.Preproc:           "noitalic #9C6500",
+          Comment:                   "italic #003e76",
+          Comment.Preproc:           "noitalic #003e76",
 
           Keyword:                   "bold #00809f",
           Keyword.Pseudo:            "nobold",
