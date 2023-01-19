@@ -16,14 +16,14 @@ class CustomStyle(Style):
           Comment:                   "italic #003e76",
           Comment.Preproc:           "noitalic #003e76",
 
-          Keyword:                   "bold #00809f",
+          Keyword:                   "bold #ff9933",
           Keyword.Pseudo:            "nobold",
           Keyword.Type:              "nobold #B00040",
 
           Operator:                  "#666666",
           Operator.Word:             "bold #AA22FF",
 
-          Name.Builtin:              "#00809f",
+          Name.Builtin:              "#ff9933",
           Name.Function:             "#009DEC",
           Name.Class:                "bold #009DEC",
           Name.Namespace:            "bold #009DEC",
@@ -33,7 +33,7 @@ class CustomStyle(Style):
           Name.Label:                "#767600",
           Name.Entity:               "bold #717171",
           Name.Attribute:            "#687822",
-          Name.Tag:                  "bold #00809f",
+          Name.Tag:                  "bold #ff9933",
           Name.Decorator:            "#AA22FF",
 
           String:                    "#005551",
@@ -42,11 +42,11 @@ class CustomStyle(Style):
           String.Escape:             "bold #AA5D1F",
           String.Regex:              "#A45A77",
           String.Symbol:             "#19177C",
-          String.Other:              "#00809f",
+          String.Other:              "#ff9933",
           Number:                    "#666666",
 
           Generic.Heading:           "bold #000080",
-          Generic.Subheading:        "bold #ff9933",
+          Generic.Subheading:        "bold #00809f",
           Generic.Deleted:           "#A00000",
           Generic.Inserted:          "#008400",
           Generic.Error:             "#E40000",
