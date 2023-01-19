@@ -28,5 +28,7 @@ RUN apt-get -y update && \
     graphviz \
     make && \
     apt-get clean
+    
+COPY pygmentize /usr/lib/python3/dist-packages/pygments/styles
 
 
