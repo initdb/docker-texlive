@@ -14,8 +14,8 @@ on:
     tags: [ 'v*.*.*' ]
     paths: [
       Dockerfile,
-      pygmentize\__init__.py,
-      pygmentize\custom.py
+      pygmentize/__init__.py,
+      pygmentize/custom.py
     ]
   pull_request:
     branches: [ main ]
