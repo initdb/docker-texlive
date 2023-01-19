@@ -1,6 +1,6 @@
 from pygments.style import Style
 from pygments.token import Token, Comment, Keyword, Name, String, \
-     Error, Generic, Number, Operator, Whitespace
+        Error, Generic, Number, Operator, Whitespace
 
 
 class CustomStyle(Style):
@@ -52,4 +52,4 @@ class CustomStyle(Style):
           Generic.Traceback:         "#04D",
 
           Error:                     "border:#FF0000"
-     }
+          }
