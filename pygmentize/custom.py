@@ -5,6 +5,11 @@ from pygments.token import Token, Comment, Keyword, Name, String, \
 
 class CustomStyle(Style):
      background_color = "#ececec"
+     #highlight_color = "#44475a"
+     #line_number_color = "#f1fa8c"
+     line_number_background_color = "#ececec"
+     #line_number_special_color = "#50fa7b"
+     line_number_special_background_color = "#ececec"
 
      styles = {
           Whitespace:                "#bbbbbb",
@@ -19,9 +24,9 @@ class CustomStyle(Style):
           Operator.Word:             "bold #AA22FF",
 
           Name.Builtin:              "#00809f",
-          Name.Function:             "#00809f",
-          Name.Class:                "bold #00809f",
-          Name.Namespace:            "bold #00809f",
+          Name.Function:             "#009DEC",
+          Name.Class:                "bold #009DEC",
+          Name.Namespace:            "bold #009DEC",
           Name.Exception:            "bold #CB3F38",
           Name.Variable:             "#19177C",
           Name.Constant:             "#880000",
