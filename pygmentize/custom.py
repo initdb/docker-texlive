@@ -1,6 +1,6 @@
 from pygments.style import Style
 from pygments.token import Token, Comment, Keyword, Name, String, \
-     Error, Generic, Number, Operator
+     Error, Generic, Number, Operator, Whitespace
 
 
 class CustomStyle(Style):
