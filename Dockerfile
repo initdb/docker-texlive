@@ -28,6 +28,10 @@ RUN apt-get -y update && \
     graphviz \
     make && \
     apt-get clean
+
+RUN wget https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts && \
+    texlua install-getnonfreefonts && \
+    getnonfreefonts --sys
     
 COPY pygmentize /usr/lib/python3/dist-packages/pygments/styles
 
