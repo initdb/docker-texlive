@@ -26,7 +26,8 @@ RUN apt-get -y update && \
     python3-pygments \
     python-is-python3 \
     graphviz \
-    make && \
+    make \
+    wget && \
     apt-get clean
 
 RUN wget https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts && \
