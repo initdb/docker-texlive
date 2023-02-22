@@ -32,7 +32,7 @@ RUN apt-get -y update && \
 
 RUN wget https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts && \
     texlua install-getnonfreefonts && \
-    getnonfreefonts --sys
+    getnonfreefonts --sys --all
     
 COPY pygmentize /usr/lib/python3/dist-packages/pygments/styles
 
