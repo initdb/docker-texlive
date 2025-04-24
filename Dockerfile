@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:25.04
 LABEL maintainer="Benedict Schwind <benedict.schwind@stud.th-rosenheim.de>"
 LABEL Description="Image for building tex documents"
 
@@ -13,6 +13,7 @@ RUN apt-get -y update && \
     apt-get -y install \
     texlive \
     latexmk \
+    texlive-latex-base \
     texlive-latex-recommended \
     texlive-lang-german \
     texlive-latex-extra \
@@ -22,8 +23,10 @@ RUN apt-get -y update && \
     texlive-bibtex-extra \
     texlive-extra-utils \
     biber \
+    chktex \
     python3 \
     python3-pygments \
+    python3-pkg-resources \
     python-is-python3 \
     graphviz \
     make \
@@ -34,6 +37,16 @@ RUN wget https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts && \
     texlua install-getnonfreefonts && \
     getnonfreefonts --sys --all
     
+# latexindent modules
+RUN apt-get install --no-install-recommends -y curl
+RUN curl -L http://cpanmin.us | perl - App::cpanminus \
+    && cpanm Log::Dispatch::File \
+    && cpanm YAML::Tiny \
+    && cpanm File::HomeDir \
+    && cpanm Unicode::GCString
+
 COPY pygmentize /usr/lib/python3/dist-packages/pygments/styles
+
+WORKDIR /work
 
 
